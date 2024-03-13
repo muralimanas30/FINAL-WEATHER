@@ -1,0 +1,25 @@
+.weather-main{
+    transition: all 0.2s ease-in-out;
+    animation: change-bg 10s linear alternate-reverse forwards infinite;
+    background-image: url(mainbg.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: saturate(1.4);
+    background-repeat: no-repeat;
+}
+@keyframes change-bg {
+    from{
+        background-position: 0% 0%;
+    }   
+    to{
+        background-position: 100% 100%;
+
+    }
+}
+
+@media only screen and (max-width:650px){
+    .weather-main{
+        animation: change-bg 20s linear alternate-reverse forwards infinite;
+    }
+}
+

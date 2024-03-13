@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index-weather.js" defer></script>
+    <title>Get Weather 🌞</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+    <div id="LOADER">
+        THE WEATHER APPLICATION IS BOOTING..
+        PLEASE BE PATIENT 😌🙏❤️
+        <pre id="loading-bar">__________</pre>
+    </div>
+
+
+    <div class="windows" id="window5">
+
+
+
+        <div class="weather-main">
+            <form id="weather-form" action="">
+                <pre class="header">GET WEATHER 🌞</pre>
+                <label for="city-input">Enter city</label>
+                <input type="text" id="weather-city-input" placeholder="Enter city here.. 🔎">
+                <span style="display: flex; flex-flow: row;">
+                
+                    <button id="weather-search-button"
+                    onclick="main()" type="submit">GET LIVE DATA ➡️</button>
+                    <button id="weather-reset-button"
+                    onclick="try_reset()" type="reset">RESET ⬅️</button>
+                    <button id="weather-city-ip-button"
+                    onclick="auto_fetch_api()">YOUR CITY 🏡</button>
+                </span>
+
+            </form>
+            <div class="weather-card">
+                <div class="city-image">
+                    <img src="hyd.jpg" height="170px" alt="CITY-IMAGE" id="weather-city-image">
+                    <p id="weather-city-name">HYDERABAD</p>
+                </div>
+                <div class="all-weather-data">
+                    <p class="countryDisplay">COUNTRY : IN</p>
+                    <p class="timeZone">UTC +5:30 </p>
+                    
+                    <p class="tempDisplay">TEMPERATURE :31 °C</p>
+                    <p class="feelsliketempDisplay">FEELS LIKE :31 °C</p>
+                    <p class="minmaxtempDisplay">MIN :31 °C :: MAX :31 °C</p>
+                    
+                    <p class="humidityDisplay">HUMIDITY : 75%</p>
+                    <p class="windDisplay">HUMIDITY : 75%</p>
+                    <p class="descDisplay">CLEAR SKIES</p>
+
+                    <p class="visibiltyDisplay">VISIBILITY : 10000</p>
+                    <!-- <p class="pressureDisplay">TEMPERATURE :31 °C</p> -->
+                    
+                </div>
+                <div class="trying-for-data">
+                    <p>TRYING TO GET A WEATHER REPORT.. PLEASE
+                            WAIT PATIENTLY 😌🙏 THANKYOU"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
