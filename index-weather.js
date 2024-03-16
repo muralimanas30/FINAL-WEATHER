@@ -251,7 +251,7 @@ function data_setter(weather_json){
     :: MAX : ${Number(((weather_json.main.temp_max)-273).toFixed(1))} °C`;
 
     weather_visibility_display_p.innerHTML=
-    `VISIBILITY : ${weather_json.visibility/1000} Km`;
+    `VISIBILITY : ${Number(weather_json.visibility/1000).toFixed(2)} Km`;
 
     weather_desc_display_p.innerHTML=
     `${weather_json.weather[0].description.toUpperCase()}`;
