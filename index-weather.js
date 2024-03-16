@@ -235,7 +235,7 @@ function data_setter(weather_json){
     `HUMIDITY : ${Number(weather_json.main.humidity)}`;
     
     weather_wind_display_p.innerHTML=
-    `WIND : ${weather_json.wind.speed} Km/hr`;
+    `WIND : ${Number(weather_json.wind.speed*1.852)} Km/hr`;
 
     
     
@@ -251,7 +251,7 @@ function data_setter(weather_json){
     :: MAX : ${Number(((weather_json.main.temp_max)-273).toFixed(1))} °C`;
 
     weather_visibility_display_p.innerHTML=
-    `VISIBILITY : ${weather_json.visibility} m`;
+    `VISIBILITY : ${weather_json.visibility/1000} Km`;
 
     weather_desc_display_p.innerHTML=
     `${weather_json.weather[0].description.toUpperCase()}`;
