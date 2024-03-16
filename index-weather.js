@@ -85,7 +85,7 @@ async function auto_fetch_api(){
         weather_search_button.style.display="none";
         
 
-        weather_card.style.display="block";
+        weather_card.style.display="flex";
         trying_for_data_frame.style.display="block";
         
         trying_for_data_frame.innerHTML=
