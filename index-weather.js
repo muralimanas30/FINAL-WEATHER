@@ -235,7 +235,7 @@ function data_setter(weather_json){
     `HUMIDITY : ${Number(weather_json.main.humidity)}`;
     
     weather_wind_display_p.innerHTML=
-    `WIND : ${Number(weather_json.wind.speed*1.852)} Km/hr`;
+    `WIND : ${Number(weather_json.wind.speed*1.852).toFixed(1)} Km/hr`;
 
     
     
