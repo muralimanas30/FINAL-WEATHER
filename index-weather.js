@@ -1,5 +1,7 @@
 // My Project 94698
 
+
+
 const weather_main = document.querySelector(".weather-main");
 const weather_form = document.getElementById("weather-form");
 const weather_time_zone =document.querySelector(".timeZone");
@@ -213,6 +215,8 @@ async function fetch_weather_data(weather_city_text){
 
 function data_setter(weather_json){
 
+
+
     weather_search_button.style.display="none";
     
     let weather_country_id;
@@ -221,6 +225,7 @@ function data_setter(weather_json){
     else{
         weather_country_id=`, ID : ${weather_json.sys.id}`;
     }
+
 
     
     trying_for_data_frame.style.display="none";
@@ -265,6 +270,8 @@ function data_setter(weather_json){
     weather_reset_button.style.display="inline";
     weather_city_image.style.display="flex";
     weather_city_ip_button.style.display="inline";
+
+
 
 }
 
