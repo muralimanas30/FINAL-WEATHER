@@ -38,20 +38,23 @@
                     <button id="weather-city-ip-button"
                     onclick="auto_fetch_api()">YOUR CITY 🏡</button>
                 </span>
-
             </form>
+            
             <div class="weather-card">
                 <div class="city-image">
-                    <img src="hyd.jpg" height="170px" alt="CITY-IMAGE" id="weather-city-image">
+                    <img src="hyd.jpg" loading="lazy" alt="CITY-IMAGE" id="weather-city-image">
                     <p id="weather-city-name">HYDERABAD</p>
                 </div>
                 <div class="all-weather-data">
                     <p class="countryDisplay">COUNTRY : IN</p>
                     <p class="timeZone">UTC +5:30 </p>
-                    
+                    <div class="time-date">
+                        <p class="timeOfZone"> HHH</p>
+                        <p class="dateOfZone">fdlk</p>
+                    </div>
                     <p class="tempDisplay">TEMPERATURE :31 °C</p>
                     <p class="feelsliketempDisplay">FEELS LIKE :31 °C</p>
-                    <p class="minmaxtempDisplay">MIN :31 °C :: MAX :31 °C</p>
+                    
                     
                     <p class="humidityDisplay">HUMIDITY : 75%</p>
                     <p class="windDisplay">HUMIDITY : 75%</p>
@@ -59,14 +62,47 @@
 
                     <p class="visibiltyDisplay">VISIBILITY : 10000</p>
                     <!-- <p class="pressureDisplay">TEMPERATURE :31 °C</p> -->
+
+                    <button id="showMore" onclick="showMore()" >
+                        VIEW MORE
+                    </button>
+
+                    <div class="additional-details">
+                        
+                        <p class="precipitationProbability">jum jum maaya</p>
+                        <p class="rainIntensity">jum jum maaya</p>
+                        <p class="sleetIntensity">jum jum maaya</p>
+                        <p class="snowIntensity">jum jum maaya</p>
+                        <p class="uvIndex">jum jum maaya</p>
+                        <p class="windDirection">jum jum maaya</p>
+                        <p class="cloudBase">jum jum maaya</p>
+                        <p class="cloudCover">jum jum maaya</p>
+                        <p class="cloudCeiling">jum jum maaya</p>
+                        <p class="dewPoint">jum jum maaya</p>
+                        <div class="lat-lon">
+                            <p class="lattitude">jum jum maaya</p>
+                            <p class="longitude">jum jum maaya</p>
+                        </div>
+                        
+                        <p class="weatherCode">jum jum maaya</p>
+                        <p class="address"></p>
+
+                    </div>
+                        <button id="showLess" onclick="showLess()" >
+                            VIEW LESS
+                        </button>
+
                     
-                </div>
+                    
+                </div>                    
+                
                 <div class="trying-for-data">
                     <p>TRYING TO GET A WEATHER REPORT.. PLEASE
                             WAIT PATIENTLY 😌🙏 THANKYOU"</p>
+                    
                 </div>
             </div>
-        </div>
     </div>
+</div>
 </body>
 </html>
